@@ -6,19 +6,21 @@
 </head>
 <body>
   <script> 
-  switch(x) {
-    case 'value1':  // if (x=== 'value1')
-        ...
-         [break]
+let a = 2 + 2;
 
-    case 'value2': //if (x === 'value2')
-        ...
-        [break]
-
+switch (a) {
+    case 3:
+        alert( "Too samll" );
+        break;
+    case 4:
+        alert ( "Exactly ");
+        break;
+    case 5:
+        alert( "Too big");
+        break;
     default:
-        ...
-        [break]
-  }
+        alert( "I don't know such values ");
+}
   
 
 console.log(switchSyntax); // don't forget to "inspect" to open DEV tools, switch to "concole"
