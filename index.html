@@ -7,20 +7,14 @@
 <body>
   <script> 
 
-switch (browser) {
-  case 'Edge':
-    alert( "You've got the Edge!" );
-    break;
+let browser = input;
+if (browser = "edge") {
+    alert("You've got the edge")
+} else if (browser = "Chrome", "Firefox", "Safari", "Opera") {
+    alert("Okey, we support those too.")
+    else alert("We Hope this page looks okay!")
+};
 
-  case 'Chrome':
-  case 'Firefox':
-  case 'Safari':
-  case 'Opera':
-    alert( 'Okay we support these browsers too' );
-    break;
-
-  default:
-    alert( 'We hope that this page looks ok!' );
 }
 
 console.log(switchSyntax); // don't forget to "inspect" to open DEV tools, switch to "concole"
