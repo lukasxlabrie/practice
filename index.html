@@ -6,11 +6,15 @@
 </head>
 <body>
   <script> 
- function showMessage () {
-  alert( "Hello everyone!");
+ function checkAge (age) {
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm ('Did parents allow you?');
+  }
  }
- showMessage ();
-  console.log(showMessage); // don't forget to "inspect" to open DEV tools, switch to "concole"
+
+  console.log(checkAge); // don't forget to "inspect" to open DEV tools, switch to "concole"
   </script>
 </body>
 </html>
