@@ -6,11 +6,14 @@
 </head>
 <body>
   <script> 
-function checkAge(age) {
-  return (age <18) || confirm ('Did paretns allow you?');
+function min (a,b) {
+  if (a > b)
+  return b; 
+  else 
+    return a;
 }
 
-  console.log(checkAge); // don't forget to "inspect" to open DEV tools, switch to "concole"
+  console.log(min); // don't forget to "inspect" to open DEV tools, switch to "concole"
   </script>
 </body>
 </html>
