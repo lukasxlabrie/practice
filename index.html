@@ -6,13 +6,9 @@
 </head>
 <body>
   <script> 
- function checkAge (age) {
-  if (age > 18) {
-    return true;
-  } else {
-    return confirm ('Did parents allow you?');
-  }
- }
+function checkAge(age) {
+  (age <18 ? true : 'Did paretns allow you?');
+}
 
   console.log(checkAge); // don't forget to "inspect" to open DEV tools, switch to "concole"
   </script>
