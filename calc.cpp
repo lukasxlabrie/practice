@@ -6,26 +6,27 @@
 
 using namespace std;
 
-int main() // Changed void to int for main function
+int main() // Changed void to int, return should be int
 {
     char statement[100];
     int op1, op2;
     char operation;
-    char answer = 'Y'; // Initialized answer to 'Y' and changed double quotes to single quotes
-    while (answer == 'Y' || answer == 'y') // Added curly braces and fixed loop condition
+    char answer = 'Y'; // changed double quotes to single quotes to ensure it's a char
+    while (answer == 'Y' || answer == 'y') // needed curly braces otherwise loop is busted
     {
         cout << "Enter expression" << endl;
         cin >> op2 >> operation >> op1;
-        if (operation == '+') // Removed semicolon after if statement
-            cout << op1 << " + " << op2 << " = " << op1 + op2 << endl; // Fixed order of operands
-        if (operation == '-') // Removed semicolon after if statement
-            cout << op1 << " - " << op2 << " = " << op1 - op2 << endl; // Fixed order of operands
-        if (operation == '*') // Added missing semicolon at the end of the line
-            cout << op1 << " * " << op2 << " = " << op1 * op2 << endl; // Fixed order of operands and changed '/' to '*'
-        if (operation == '/') // Removed semicolon after if statement and fixed '/' to '*'
-            cout << op1 << " / " << op2 << " = " << op1 / op2 << endl; // Fixed order of operands and changed '*' to '/'
+        if (operation == '+') // do not need semicolon
+            cout << op1 << " + " << op2 << " = " << op1 + op2 << endl; // operands incorrectly ordered
+        if (operation == '-') // do not need semicolon
+            cout << op1 << " - " << op2 << " = " << op1 - op2 << endl; // operands incorrectly ordered
+        if (operation == '*') // do not need semicolon
+            cout << op1 << " * " << op2 << " = " << op1 * op2 << endl; // operands incorrectly ordered, changed / to *
+        if (operation == '/') // do not need semicolon
+            cout << op1 << " / " << op2 << " = " << op1 / op2 << endl; // operands incorrectly ordered, changed / to *
         cout << "Do you wish to evaluate another expression? " << endl;
         cin >> answer;
     }
-    return 0; // Added return statement
+    return 0; // will not clsoe wihtout return
+    
 }
