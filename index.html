@@ -10,6 +10,17 @@ function ask(question, yes, no) {
   if (confirm(question)) yes()
   else no();
 }
+
+function showOk() {
+  alert( "You Agreed." );
+}
+
+function showCancel () {
+  alert( "You canceled the execution")
+}
+
+ask("Do you agree?", showOk, showCancel);
+
   console.log(ask) // don't forget to "inspect" to open DEV tools, switch to "concole"
   </script>
 </body>
